@@ -139,7 +139,7 @@ This is deliberately **not** a conventional multi-tier backend architecture. The
 | Subject | Days | Planned Classes | Type |
 |---|---:|---:|---|
 | Internet of Things | Monday + Wednesday | 32 | Course |
-| Cloud Computing | Tuesday + Wednesday | 32 | Course |
+| Cloud Computing | Monday + Friday | 32 | Course |
 | Machine Learning | Wednesday | 16 | Course |
 | Compiler Construction | Monday + Tuesday | 32 | Course |
 | Cloud Computing Lab | Thursday | 16 | Lab |
