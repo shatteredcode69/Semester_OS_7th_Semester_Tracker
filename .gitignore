@@ -1,0 +1,16 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Local backups / generated data
+semester-os-backup-*.json
+*.log
+
+# Python/Node artifacts if development tooling is added later
+__pycache__/
+node_modules/
+dist/
+build/
