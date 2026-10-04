@@ -1,4 +1,4 @@
-const CACHE = "semester-os-v2";
+const CACHE = "semester-os-v3";
 const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon.svg"];
 
 self.addEventListener("install", event => {

@@ -55,7 +55,7 @@ const SUBJECTS=[
 const DAYS=['Mon','Tue','Wed','Thu','Fri'],DAYNUM={Mon:1,Tue:2,Wed:3,Thu:4,Fri:5},DAYNAME={Mon:'Monday',Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday'};
 const START=new Date('2026-08-31T00:00:00'),END=new Date('2027-01-01T23:59:59');
 const NAV=[['home','⌂','Dashboard'],['attendance','✓','Attendance'],['timetable','▦','Timetable'],['calendar','□','Calendar'],['tasks','☑','Tasks'],['focus','◷','Focus'],['fyp','⌁','FYP'],['settings','⚙','Settings']];
-const KEY='semesterOS_advanced_v2';
+const KEY='semesterOS_advanced_v3';
 const DEFAULT={theme:'light',page:'home',attendance:{},tasks:[],fyp:{progress:0,milestones:[['Scope & problem statement',false],['Literature review',false],['Architecture/design',false],['Debian gateway prototype',false],['Cloud layer implementation',false],['Latency & throughput experiments',false],['Analysis & final documentation',false]]},settings:{threshold:75,azure:'2026-10-12',finals:'2027-01-04'},focus:{minutes:25,seconds:1500,running:false,label:'Deep Work'}};
 let S=load(),attTab='overview',calDate=new Date('2026-09-01T12:00:00'),timer=null;
 function load(){try{const x=JSON.parse(localStorage.getItem(KEY));return x?merge(DEFAULT,x):clone(DEFAULT)}catch(e){return clone(DEFAULT)}}function clone(x){return JSON.parse(JSON.stringify(x))}function merge(a,b){const o=clone(a);for(const k in b)o[k]=(b[k]&&typeof b[k]=='object'&&!Array.isArray(b[k])&&o[k])?merge(o[k],b[k]):b[k];return o}function save(){localStorage.setItem(KEY,JSON.stringify(S))}function esc(x){return String(x??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]))}
